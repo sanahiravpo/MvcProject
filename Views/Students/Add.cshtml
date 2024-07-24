@@ -1,0 +1,39 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@model MvcProject.Models.AddViewModel
+
+<form method="post">
+<div>
+    <label>Name</label>
+    <input  type="text"  asp-for="name"/>
+
+    </div>
+    <div>
+        <label>Age</label>
+        <input type="number" asp-for="age" />
+    </div>
+     
+    <div>
+
+    <label>Email</label>
+    <input type="email" asp-for="email" />
+
+    </div>
+    
+    <div>
+      <label>phone</label>
+    <input type="text"  asp-for="phone" />
+
+ 
+</div>
+<div>
+    <label>subscribed</label>
+    <input  type="checkbox" asp-for="subscribed"/>
+</div>
+<div>
+    <button>save</button>
+</div>
+</form>
